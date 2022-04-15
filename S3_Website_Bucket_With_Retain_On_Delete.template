@@ -11,6 +11,12 @@
         "WebsiteConfiguration" : {
           "IndexDocument" : "index.html",
           "ErrorDocument" : "error.html"      
+         },
+         "PublicAccessBlockConfiguration": {
+            "BlockPublicAcls": true,
+            "BlockPublicPolicy": true,
+            "IgnorePublicAcls": true,
+            "RestrictPublicBuckets": true
          }
       },
       "DeletionPolicy" : "Retain"

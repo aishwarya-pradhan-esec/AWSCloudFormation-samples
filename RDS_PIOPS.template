@@ -34,7 +34,9 @@
         "EngineVersion" : "5.5",
         "Iops" : "1000",
         "MasterUsername" : { "Ref" : "DBUser" },
-        "MasterUserPassword" : { "Ref" : "DBPassword" }
+        "MasterUserPassword" : { "Ref" : "DBPassword" },
+        "StorageEncrypted": true,
+        "MultiAZ": true
       }
     }
   }

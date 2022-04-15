@@ -94,7 +94,9 @@
         "MasterUsername" : { "Ref" : "DBUsername" } ,
         "MasterUserPassword" : { "Ref" : "DBPassword" },
         "DBSubnetGroupName" : { "Ref" : "MyDBSubnetGroup" },
-        "DBSecurityGroups" : [ { "Ref" : "MyDBSecurityGroup" } ]
+        "DBSecurityGroups" : [ { "Ref" : "MyDBSecurityGroup" } ],
+        "StorageEncrypted": true,
+        "MultiAZ": true
       }
     }
   },

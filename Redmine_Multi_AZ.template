@@ -289,7 +289,7 @@
         "Engine"            : "MySQL",
         "MasterUsername"    : { "Ref" : "DBUsername" },
         "DBInstanceClass"   : { "Ref" : "DBClass" },
-        "MultiAZ"           : { "Ref" : "MultiAZDatabase" },
+        "MultiAZ"           : true"Ref" : "MultiAZDatabase" },
         "DBSecurityGroups"  : [{ "Ref" : "DBSecurityGroup" }],
         "AllocatedStorage"  : { "Ref" : "DBAllocatedStorage" },
         "MasterUserPassword": { "Ref" : "DBPassword" }

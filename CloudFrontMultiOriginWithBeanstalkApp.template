@@ -12,7 +12,13 @@
         "sampleS3OriginBucket" : {
            "Type" : "AWS::S3::Bucket",
            "Properties" : {
-                "AccessControl" : "PublicRead"
+                "AccessControl" : "PublicRead",
+               "PublicAccessBlockConfiguration": {
+                    "RestrictPublicBuckets": true,
+                    "BlockPublicAcls": true,
+                    "BlockPublicPolicy": true,
+                    "IgnorePublicAcls": true
+               }
             }
          },
 
@@ -54,7 +60,13 @@
         "sampleS3LoggingBucket" : {
            "Type" : "AWS::S3::Bucket",
            "Properties" : {
-                "AccessControl" : "PublicRead"
+                "AccessControl" : "PublicRead",
+               "PublicAccessBlockConfiguration": {
+                    "IgnorePublicAcls": true,
+                    "BlockPublicAcls": true,
+                    "RestrictPublicBuckets": true,
+                    "BlockPublicPolicy": true
+               }
             }
          },
 
@@ -97,7 +109,10 @@
                        "Bucket" : { "Fn::GetAtt" : [ "sampleS3LoggingBucket", "DomainName"] },
                        "Prefix" : "CloudFrontDistributionSampleLogs"
                    },
-                   "Enabled" : "true"             
+                   "Enabled" : "true"             ,
+                "ViewerCertificate": {
+                    "MinimumProtocolVersion": "TLSv1.2_2021"
+                }
                 }
             }
         }

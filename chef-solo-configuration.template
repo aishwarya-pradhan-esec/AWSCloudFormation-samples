@@ -128,7 +128,10 @@
         "LBCookieStickinessPolicy": [ {
             "CookieExpirationPeriod": "30",
             "PolicyName": "p1"
-        } ]
+        } ],
+        "AccessLoggingPolicy": {
+          "Enabled": true
+        }
       }
     },
 

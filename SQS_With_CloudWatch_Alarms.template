@@ -14,7 +14,8 @@
   "Resources" : {
     "MyQueue" : {
       "Type" : "AWS::SQS::Queue",
-      "Properties" : {
+      "Properties" : {,
+"KmsMasterKeyId": "CKV_ANY"
       }
     },
     "AlarmTopic": {

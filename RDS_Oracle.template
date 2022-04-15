@@ -13,7 +13,9 @@
         "Engine" : "oracle-ee",
         "LicenseModel" : "bring-your-own-license",
         "MasterUsername" : "MyName",
-        "MasterUserPassword" : "MyPassword"
+        "MasterUserPassword" : "MyPassword",
+        "MultiAZ": true,
+        "StorageEncrypted": true
       }
     }    
   }

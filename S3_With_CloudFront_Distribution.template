@@ -26,7 +26,10 @@
   "Resources" : {
     "S3BucketForWebsiteContent" : {
       "Type" : "AWS::S3::Bucket",
-      "Properties" : {
+      "Properties" : {,
+"PublicAccessBlockConfiguration": {
+"RestrictPublicBuckets": true
+}
       }
     },
 
@@ -43,7 +46,13 @@
            },
            "Enabled" : "true",
            "DefaultRootObject" : "index.html",
-           "CNAMEs" : [{ "Fn::Join" : [ "", [{"Ref" : "AWS::StackId"}, ".", {"Ref" : "AWS::Region"}, ".", { "Ref" : "HostedZone" }]]}]
+           "CNAMEs" : [{ "Fn::Join" : [ "", [{"Ref" : "AWS::StackId"}, ".", {"Ref" : "AWS::Region"}, ".", { "Ref" : "HostedZone" }]]}],
+          "Logging": {
+            "Bucket": "{\"Fn::GetAtt\":[\"sampleS3LoggingBucket\",\"DomainName\"],\"__startline__\":97,\"__endline__\":97}"
+          },
+          "ViewerCertificate": {
+           "MinimumProtocolVersion": "TLSv1.2_2021"
+          }
          }
       }
     },

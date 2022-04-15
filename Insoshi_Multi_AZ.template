@@ -379,7 +379,7 @@
         "DBName"            : { "Ref" : "DBName" },
         "Engine"            : "MySQL",
         "MasterUsername"    : { "Ref" : "DBUsername" },
-        "MultiAZ"           : { "Ref" : "MultiAZDatabase" },
+        "MultiAZ"           : true"Ref" : "MultiAZDatabase" },
         "DBInstanceClass"   : { "Ref" : "DBClass" },
         "DBSecurityGroups"  : [{ "Ref" : "DBSecurityGroup" }],
         "AllocatedStorage"  : { "Ref" : "DBAllocatedStorage" },

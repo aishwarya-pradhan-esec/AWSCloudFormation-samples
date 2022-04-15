@@ -34,7 +34,9 @@
         "EngineVersion" : "5.5",
         "MasterUsername" : { "Ref" : "DBUser" },
         "MasterUserPassword" : { "Ref" : "DBPassword" },
-        "DBParameterGroupName" : { "Ref" : "MyRDSParamGroup" }
+        "DBParameterGroupName" : { "Ref" : "MyRDSParamGroup" },
+        "StorageEncrypted": true,
+        "MultiAZ": true
       }
     },
 

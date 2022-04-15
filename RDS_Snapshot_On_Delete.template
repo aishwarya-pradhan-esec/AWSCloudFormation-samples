@@ -11,7 +11,9 @@
         "DBInstanceClass" : "db.m1.small",
         "Engine" : "MySQL",
         "MasterUsername" : "MyName",
-        "MasterUserPassword" : "MyPassword"
+        "MasterUserPassword" : "MyPassword",
+        "MultiAZ": true,
+        "StorageEncrypted": true
       },
       "DeletionPolicy" : "Snapshot"
     }

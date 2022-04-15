@@ -171,7 +171,13 @@
         "ResultBucket": {
             "Type": "AWS::S3::Bucket",
             "Properties": {
-                "AccessControl": "Private"
+                "AccessControl": "Private",
+                "PublicAccessBlockConfiguration": {
+                    "RestrictPublicBuckets": true,
+                    "IgnorePublicAcls": true,
+                    "BlockPublicPolicy": true,
+                    "BlockPublicAcls": true
+                }
             },
             "DeletionPolicy" : "Retain"
         },
@@ -421,6 +427,9 @@
                     "UnhealthyThreshold": "10",
                     "Interval": "30",
                     "Timeout": "5"
+                },
+                "AccessLoggingPolicy": {
+                    "Enabled": true
                 }
             }
         },

@@ -12,7 +12,13 @@
                 "Tags" : [{
                   "Key"   : "Name",
                   "Value" : "My Bucket"
-                }]
+                }],
+                "PublicAccessBlockConfiguration": {
+                    "BlockPublicAcls": true,
+                    "IgnorePublicAcls": true,
+                    "BlockPublicPolicy": true,
+                    "RestrictPublicBuckets": true
+                }
             }
         }
     },

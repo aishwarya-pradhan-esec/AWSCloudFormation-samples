@@ -6,7 +6,15 @@
   "Resources" : {
 
     "S3Bucket" : {
-      "Type" : "AWS::S3::Bucket"
+      "Type" : "AWS::S3::Bucket",
+      "Properties": {
+        "PublicAccessBlockConfiguration": {
+          "RestrictPublicBuckets": true,
+          "BlockPublicPolicy": true,
+          "BlockPublicAcls": true,
+          "IgnorePublicAcls": true
+        }
+      }
     },
 
     "S3User" : {
