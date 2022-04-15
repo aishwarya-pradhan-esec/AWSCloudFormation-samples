@@ -12,7 +12,9 @@
         "Engine" : "MySQL",
         "EngineVersion" : "5.5",
         "MasterUsername" : "MyName",
-        "MasterUserPassword" : "MyPassword"
+        "MasterUserPassword" : "MyPassword",
+        "MultiAZ": true,
+        "StorageEncrypted": true
       }
     }
   }

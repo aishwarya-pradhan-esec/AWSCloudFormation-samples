@@ -259,7 +259,7 @@
         "Engine"            : "MySQL",
         "DBName"            : { "Ref": "DBName" },
         "Port"              : "3306",
-        "MultiAZ"           : { "Ref" : "MultiAZDatabase" },
+        "MultiAZ"           : true"Ref" : "MultiAZDatabase" },
         "MasterUsername"    : { "Ref": "DBUser" },
         "DBInstanceClass"   : { "Ref" : "DBClass" },
         "DBSecurityGroups"  : [{ "Ref": "DBSecurityGroup" }],

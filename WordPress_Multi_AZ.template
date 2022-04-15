@@ -260,7 +260,7 @@
       "Properties": {
         "DBName"            : { "Ref" : "DBName" },
         "Engine"            : "MySQL",
-        "MultiAZ"           : { "Ref": "MultiAZDatabase" },
+        "MultiAZ"           : true"Ref": "MultiAZDatabase" },
         "MasterUsername"    : { "Ref" : "DBUsername" },
         "DBInstanceClass"   : { "Ref" : "DBClass" },
         "DBSecurityGroups"  : [{ "Ref" : "DBSecurityGroup" }],

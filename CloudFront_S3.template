@@ -16,7 +16,13 @@
       "Properties" : {
          "DistributionConfig" : {
            "S3Origin" : {"DNSName": { "Ref" : "S3DNSName" }},       
-           "Enabled" : "true"
+           "Enabled" : "true",
+          "Logging": {
+            "Bucket": "{\"Fn::GetAtt\":[\"sampleS3LoggingBucket\",\"DomainName\"],\"__startline__\":97,\"__endline__\":97}"
+          },
+          "ViewerCertificate": {
+           "MinimumProtocolVersion": "TLSv1.2_2021"
+          }
          }
       }
     }

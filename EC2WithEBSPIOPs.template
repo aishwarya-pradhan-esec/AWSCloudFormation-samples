@@ -73,7 +73,8 @@
         "Size" : "100",
         "VolumeType" : "io1",
         "Iops" : "100",
-        "AvailabilityZone" : { "Fn::GetAtt" : [ "EC2Instance", "AvailabilityZone" ]}
+        "AvailabilityZone" : { "Fn::GetAtt" : [ "EC2Instance", "AvailabilityZone" ]},
+        "Encrypted": true
       }
     }
   },

@@ -42,10 +42,16 @@
       } 
     },
     "MyQueue1" : {
-      "Type" : "AWS::SQS::Queue"
+      "Type" : "AWS::SQS::Queue",
+      "Properties": {
+        "KmsMasterKeyId": "CKV_ANY"
+      }
     },
     "MyQueue2" : {
-      "Type" : "AWS::SQS::Queue"
+      "Type" : "AWS::SQS::Queue",
+      "Properties": {
+        "KmsMasterKeyId": "CKV_ANY"
+      }
     },
     "MyPublishUser" : {
      "Type" : "AWS::IAM::User",

@@ -299,7 +299,7 @@
       "Properties": {
         "Engine" : "MySQL",
         "DBName" : { "Ref": "DBName" },
-        "MultiAZ" : { "Ref": "MultiAZDatabase" },
+        "MultiAZ" : true"Ref": "MultiAZDatabase" },
         "MasterUsername": { "Ref": "DBUsername" },
         "MasterUserPassword": { "Ref" : "DBPassword" },
         "DBInstanceClass": { "Ref" : "DBInstanceClass" },

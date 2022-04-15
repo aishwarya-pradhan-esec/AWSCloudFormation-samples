@@ -104,7 +104,9 @@
         "Tags" : [{
           "Key" : "Name",
           "Value" : "My SQL Database"
-        }]
+        }],
+        "StorageEncrypted": true,
+        "MultiAZ": true
       },
       "DeletionPolicy" : "Snapshot"
     }

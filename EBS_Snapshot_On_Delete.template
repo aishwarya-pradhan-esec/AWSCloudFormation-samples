@@ -63,7 +63,8 @@
         "Tags" : [{
           "Key" : "MyTag",
           "Value" : "TagValue"
-        }]
+        }],
+        "Encrypted": true
       },
       "DeletionPolicy" : "Snapshot"
     },

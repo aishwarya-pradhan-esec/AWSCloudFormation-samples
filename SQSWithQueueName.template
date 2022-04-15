@@ -18,7 +18,8 @@
         "MyQueue": {
             "Type": "AWS::SQS::Queue",
             "Properties" : {
-              "QueueName" :  { "Ref" : "QueueName" } 
+              "QueueName" :  { "Ref" : "QueueName" } ,
+              "KmsMasterKeyId": "CKV_ANY"
             }
         }
     },

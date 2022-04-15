@@ -279,6 +279,9 @@
           "UnhealthyThreshold" : "5",
           "Interval" : "90",
           "Timeout" : "60"
+        },
+        "AccessLoggingPolicy": {
+          "Enabled": true
         }
       }
     },

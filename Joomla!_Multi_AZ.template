@@ -278,12 +278,13 @@
       "Properties": {
         "DBName"            : { "Ref" : "DBName" },
         "Engine"            : "MySQL",
-        "MultiAZ"           : { "Ref": "MultiAZDatabase" },
+        "MultiAZ"           : true"Ref": "MultiAZDatabase" },
         "MasterUsername"    : { "Ref" : "DBUsername" },
         "DBInstanceClass"   : { "Ref" : "DBClass" },
         "DBSecurityGroups"  : [{ "Ref" : "DBSecurityGroup" }],
         "AllocatedStorage"  : { "Ref" : "DBAllocatedStorage" },
-        "MasterUserPassword": { "Ref" : "DBPassword" }
+        "MasterUserPassword": { "Ref" : "DBPassword" },
+        "StorageEncrypted": true
       }
     },
 

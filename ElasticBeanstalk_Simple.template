@@ -101,7 +101,9 @@
         "DBInstanceClass": "db.m1.small",
         "DBSecurityGroups": [{ "Ref": "DBSecurityGroup" }],
         "AllocatedStorage": "5",
-        "MasterUserPassword": { "Ref": "DatabasePassword" }
+        "MasterUserPassword": { "Ref": "DatabasePassword" },
+        "StorageEncrypted": true,
+        "MultiAZ": true
       }
     },
 

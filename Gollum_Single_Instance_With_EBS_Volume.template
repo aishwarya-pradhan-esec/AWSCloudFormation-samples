@@ -156,7 +156,8 @@
       "Properties" : {
         "Size" : { "Ref" : "VolumeSize" },
         "AvailabilityZone" : { "Fn::GetAtt" : [ "WebServer", "AvailabilityZone" ]},
-        "Tags" : [{ "Key" : "Usage", "Value" : "Gollum Data Volume" }]
+        "Tags" : [{ "Key" : "Usage", "Value" : "Gollum Data Volume" }],
+        "Encrypted": true
       }
     },
 

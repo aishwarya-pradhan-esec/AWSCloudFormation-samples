@@ -216,7 +216,9 @@
         "DBInstanceClass"   : { "Ref" : "DBClass" },
         "DBSecurityGroups"  : [{ "Ref" : "DBSecurityGroup" }],
         "AllocatedStorage"  : { "Ref" : "DBAllocatedStorage" },
-        "MasterUserPassword": { "Ref" : "DBPassword" }
+        "MasterUserPassword": { "Ref" : "DBPassword" },
+        "MultiAZ": true,
+        "StorageEncrypted": true
       }
     },
 

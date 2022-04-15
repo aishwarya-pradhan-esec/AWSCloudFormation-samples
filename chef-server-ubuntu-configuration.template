@@ -247,7 +247,13 @@
     "PrivateKeyBucket" : {
       "Type" : "AWS::S3::Bucket",
       "Properties" : {
-        "AccessControl" : "Private"
+        "AccessControl" : "Private",
+        "PublicAccessBlockConfiguration": {
+          "RestrictPublicBuckets": true,
+          "BlockPublicPolicy": true,
+          "IgnorePublicAcls": true,
+          "BlockPublicAcls": true
+        }
       },
       "DeletionPolicy" : "Delete"
     },
