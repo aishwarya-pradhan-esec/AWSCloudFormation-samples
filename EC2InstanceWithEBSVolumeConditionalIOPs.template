@@ -131,7 +131,8 @@
         "Size": { "Ref" : "VolumeSize" },
         "AvailabilityZone": { "Fn::GetAtt": [ "EC2Instance", "AvailabilityZone"] },
         "VolumeType" : { "Fn::If" : ["IsEBSOptimized", "io1", {"Ref" : "AWS::NoValue"}]},
-        "Iops" : { "Fn::If" : ["IsEBSOptimized", { "Ref" : "IOPs" }, {"Ref" : "AWS::NoValue"}]}
+        "Iops" : { "Fn::If" : ["IsEBSOptimized", { "Ref" : "IOPs" }, {"Ref" : "AWS::NoValue"}]},
+        "Encrypted": true
       }
     },
 
