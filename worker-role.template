@@ -98,7 +98,10 @@
 
 
     "InputQueue" : {
-      "Type" : "AWS::SQS::Queue"
+      "Type" : "AWS::SQS::Queue",
+      "Properties": {
+        "KmsMasterKeyId": "CKV_ANY"
+      }
     },
 
     "InputQueuePolicy" : {
