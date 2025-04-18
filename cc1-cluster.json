@@ -155,7 +155,8 @@
 	        "Tags" : [{
 	          "Key" : "Dataset",
 	          "Value" : "Ensembl"
-	        }]
+	        }],
+        "Encrypted": true
 	      }
 	    }
   	},
